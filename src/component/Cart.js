@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import './Cart.css';
 import Navbar from '../component/Navbar';
 import { DarkModeContext } from '../component/DarkModeContext';
+import Footer from "../component/Footer"
+import SubFooter from "../component/SubFooter"
 
 const Cart = () => {
   const location = useLocation();
@@ -124,6 +126,8 @@ const Cart = () => {
           Back to Products
         </button>
       </div>
+      <Footer/>
+      <SubFooter/>
     </>
   );
 };
